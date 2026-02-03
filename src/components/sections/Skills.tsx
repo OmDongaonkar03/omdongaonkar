@@ -19,7 +19,7 @@ const skillCategories = [
   {
     title: "Backend",
     icon: Server,
-    skills: ["Node.js", "Express.js", "PHP", "RESTful APIs", "Microservices Architecture"],
+    skills: ["Node.js", "Express.js", "PHP", "Python", "Prisma", "RESTful APIs", "Microservices Architecture"],
   },
   {
     title: "Databases",
