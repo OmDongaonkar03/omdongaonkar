@@ -10,7 +10,7 @@ It showcases:
 
 The site is built with **Vite + React** and deployed globally using **Cloudflare Pages** for fast load times and great performance.
 
-🔗 Live: https://omdongaonkar.pages.dev/
+🔗 Live: [https://omdongaonkar.pages.dev/](https://omdongaonkar.in/)
 
 ---
 
