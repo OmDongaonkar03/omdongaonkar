@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://omdongaonkar.site/sitemap.xml
+Sitemap: https://omdongaonkar.in/sitemap.xml
