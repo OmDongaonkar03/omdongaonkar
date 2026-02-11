@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Phone, Github, Linkedin, ArrowUpRight } from "lucide-react";
+import { Mail, Phone, Github, Linkedin, Twitter, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const contactLinks = [
@@ -23,6 +23,13 @@ const contactLinks = [
     href: "https://linkedin.com/in/omdongaonkar",
     icon: Linkedin,
   },
+  {
+	label: "X",
+	value:"OmDongaonkar03",
+	href:"https://x.com/OmDongaonkar03",
+	icon: Twitter,
+	
+  }
 ];
 
 export function Contact() {
