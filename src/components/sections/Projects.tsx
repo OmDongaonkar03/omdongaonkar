@@ -8,7 +8,15 @@ const projects = [
   {
     title: "Throughline",
     subtitle: "Personal Journey Tracking Platform",
-    technologies: ["React", "Node.js", "Express.js", "Prisma", "MySQL", "Mastra", "OpenAI API"],
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "Prisma",
+      "MySQL",
+      "Mastra",
+      "LLMs",
+    ],
     description: [
       "Developed a full-stack web application enabling users to log daily activities and track personal growth",
       "Implemented automated summary generation for daily, weekly, and monthly progress analysis",
@@ -20,18 +28,18 @@ const projects = [
     live: "",
   },
   {
-    title: "TypeClash",
-    subtitle: "Real-Time Competitive Typing Game",
-    technologies: ["HTML", "CSS", "Tailwind", "PHP", "MySQL"],
+    title: "Micrologs",
+    subtitle: "Self-Hosted Analytics & Error Tracking Engine",
+    technologies: ["PHP", "MySQL", "Vanilla JS", "REST API"],
     description: [
-      "Built a real-time competitive typing game transforming typing practice into engaging multiplayer battles",
-      "Implemented full rank ladder system from Rookie to Godlike with global solo leaderboard",
-      "Created highly customizable Infinite Type Mode with multiple game modes including Classic, Voice Typing, and Rapid Fire",
-      "Designed competitive online multiplayer infrastructure for real-time player battles",
-      "Developed comprehensive customization options for enhanced user experience and engagement",
+      "Built a self-hostable analytics and error tracking engine that ensures full data ownership with no third-party dashboard",
+      "Optimized the architecture to handle up to ~10,000 pageviews per day on standard shared hosting without external dependencies",
+      "Implemented comprehensive tracking for unique visitors, sessions, referrers, device types, and UTM campaigns",
+      "Developed robust error monitoring with automatic JS error catching and fingerprint-based grouping for backend issues",
+      "Integrated advanced features including audit logging, bot filtering, multi-project support, and a tracked link shortener",
     ],
-    github: "",
-    live: "https://versatiletechnology.in/Typeclash/",
+    github: "https://github.com/OmDongaonkar03/Micrologs",
+    live: "",
   },
 ];
 
@@ -62,7 +70,9 @@ export function Projects() {
                   <CardHeader className="pb-4">
                     <div className="flex items-start justify-between gap-4">
                       <div>
-                        <h3 className="text-lg font-normal mb-1">{project.title}</h3>
+                        <h3 className="text-lg font-normal mb-1">
+                          {project.title}
+                        </h3>
                         <p className="text-sm text-muted-foreground font-light">
                           {project.subtitle}
                         </p>

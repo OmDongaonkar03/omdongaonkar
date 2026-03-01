@@ -19,22 +19,17 @@ const skillCategories = [
   {
     title: "Backend",
     icon: Server,
-    skills: ["Node.js", "Express.js", "PHP", "Python", "Prisma", "RESTful APIs", "Microservices Architecture"],
+    skills: ["Node.js", "Express.js", "PHP", "Python", "Prisma", "Redis", "BullMQ"],
   },
   {
     title: "Databases",
     icon: Database,
-    skills: ["MongoDB", "MySQL", "Database Normalization", "Query Optimization", "Indexing"],
+    skills: ["MongoDB", "MySQL", "PostgreSQL", "SQLite"],
   },
   {
     title: "Development Tools",
     icon: Wrench,
-    skills: ["Git", "GitHub", "npm", "Webpack", "Postman"],
-  },
-  {
-    title: "Security & Performance",
-    icon: Shield,
-    skills: ["OWASP Top 10", "Multi-layer Encryption", "Application Security", "Performance Optimization"],
+    skills: ["Supabase", "Firebase", "GitHub", "Git", "Cloudflare", "Postman"],
   },
   {
     title: "Methodologies",
