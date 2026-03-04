@@ -1,31 +1,42 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import {
+  SiHtml5,
+  SiCss,
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiJquery,
+  SiNodedotjs,
+  SiExpress,
+  SiPhp,
+  SiMongodb,
+  SiMysql,
+  SiGit,
+  SiGithub,
+  SiNpm,
+  SiPostman,
+} from "react-icons/si";
 
 const languages = [
-  // Frontend
-  { name: "HTML5", file: "html.png" },
-  { name: "CSS3", file: "css.png" },
-  { name: "JavaScript", file: "javascript.png" },
-  { name: "TypeScript", file: "typescript.png" },
-  { name: "React.js", file: "react.png" },
-  { name: "Next.js", file: "nextjs.png" },
-  { name: "jQuery", file: "jquery.png" },
-  
-  // Backend
-  { name: "Node.js", file: "nodejs.png" },
-  { name: "Express.js", file: "express.png" },
-  { name: "PHP", file: "php.png" },
-  
-  // Databases
-  { name: "MongoDB", file: "mongodb.png" },
-  { name: "MySQL", file: "mysql.png" },
-  
-  // Development Tools
-  { name: "Git", file: "git.png" },
-  { name: "GitHub", file: "github.png" },
-  { name: "npm", file: "npm.png" },
-  { name: "Postman", file: "postman.png" },
+  { name: "HTML5", Icon: SiHtml5, color: "#E34F26" },
+  { name: "CSS3", Icon: SiCss, color: "#1572B6" },
+  { name: "JavaScript", Icon: SiJavascript, color: "#F7DF1E" },
+  { name: "TypeScript", Icon: SiTypescript, color: "#3178C6" },
+  { name: "React.js", Icon: SiReact, color: "#61DAFB" },
+  { name: "Next.js", Icon: SiNextdotjs, color: "currentColor" },
+  { name: "jQuery", Icon: SiJquery, color: "#0769AD" },
+  { name: "Node.js", Icon: SiNodedotjs, color: "#339933" },
+  { name: "Express.js", Icon: SiExpress, color: "currentColor" },
+  { name: "PHP", Icon: SiPhp, color: "#777BB4" },
+  { name: "MongoDB", Icon: SiMongodb, color: "#47A248" },
+  { name: "MySQL", Icon: SiMysql, color: "#4479A1" },
+  { name: "Git", Icon: SiGit, color: "#F05032" },
+  { name: "GitHub", Icon: SiGithub, color: "currentColor" },
+  { name: "npm", Icon: SiNpm, color: "#CB3837" },
+  { name: "Postman", Icon: SiPostman, color: "#FF6C37" },
 ];
 
 export function About() {
@@ -46,19 +57,22 @@ export function About() {
           <div className="grid md:grid-cols-3 gap-12">
             <div className="md:col-span-2 space-y-6">
               <p className="text-lg md:text-xl font-light leading-relaxed text-foreground">
-                Results-driven Full Stack Developer with hands-on experience in building 
-                secure, high-performance web applications across the entire technology stack.
+                Results-driven Full Stack Developer with hands-on experience in
+                building secure, high-performance web applications across the
+                entire technology stack.
               </p>
               <p className="text-base text-muted-foreground font-light leading-relaxed">
-                Proven track record of optimizing application performance by 25-30% through 
-                API refactoring, database optimization, and code minification. Skilled in 
-                modern JavaScript frameworks, RESTful API development, and implementing 
-                enterprise-grade security measures.
+                Proven track record of optimizing application performance by
+                25-30% through API refactoring, database optimization, and code
+                minification. Skilled in modern JavaScript frameworks, RESTful
+                API development, and implementing enterprise-grade security
+                measures.
               </p>
               <p className="text-base text-muted-foreground font-light leading-relaxed">
-                Experienced in Agile methodologies and passionate about delivering scalable, 
-                maintainable solutions. Currently pursuing a Diploma in Artificial Intelligence 
-                and Machine Learning at Marathwada Institute of Technology.
+                Experienced in Agile methodologies and passionate about
+                delivering scalable, maintainable solutions. Currently pursuing
+                a Diploma in Artificial Intelligence and Machine Learning at
+                Marathwada Institute of Technology.
               </p>
             </div>
 
@@ -73,18 +87,18 @@ export function About() {
                       key={lang.name}
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                      transition={{ 
-                        duration: 0.4, 
-                        delay: 0.1 * index,
-                        ease: [0.25, 0.1, 0.25, 1] 
+                      transition={{
+                        duration: 0.4,
+                        delay: 0.05 * index,
+                        ease: [0.25, 0.1, 0.25, 1],
                       }}
                       className="group relative"
+                      title={lang.name}
                     >
-                      <div className="aspect-square bg-white/5 blur-[0.5px] border border-border rounded-lg p-2 flex items-center justify-center hover:border-foreground/20 transition-colors">
-                        <img
-                          src={`/skills/${lang.file}`}
-                          alt={lang.name}
-                          className="w-full h-full object-contain"
+                      <div className="aspect-square bg-white/5 border border-border rounded-lg p-2.5 flex items-center justify-center hover:border-foreground/20 transition-colors">
+                        <lang.Icon
+                          className="w-full h-full"
+                          style={{ color: lang.color }}
                         />
                       </div>
                     </motion.div>

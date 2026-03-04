@@ -1,14 +1,39 @@
+import { lazy, Suspense } from "react";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Profiles } from "@/components/sections/Profiles";
-import { Experience } from "@/components/sections/Experience";
-import { Skills } from "@/components/sections/Skills";
-import { Projects } from "@/components/sections/Projects";
-import { Leadership } from "@/components/sections/Leadership";
-import { Education } from "@/components/sections/Education";
-import { Contact } from "@/components/sections/Contact";
-import { Footer } from "@/components/Footer";
+
+// Lazy load below-fold sections — only downloaded when needed
+const Experience = lazy(() =>
+  import("@/components/sections/Experience").then((m) => ({
+    default: m.Experience,
+  })),
+);
+const Skills = lazy(() =>
+  import("@/components/sections/Skills").then((m) => ({ default: m.Skills })),
+);
+const Projects = lazy(() =>
+  import("@/components/sections/Projects").then((m) => ({
+    default: m.Projects,
+  })),
+);
+const Leadership = lazy(() =>
+  import("@/components/sections/Leadership").then((m) => ({
+    default: m.Leadership,
+  })),
+);
+const Education = lazy(() =>
+  import("@/components/sections/Education").then((m) => ({
+    default: m.Education,
+  })),
+);
+const Contact = lazy(() =>
+  import("@/components/sections/Contact").then((m) => ({ default: m.Contact })),
+);
+const Footer = lazy(() =>
+  import("@/components/Footer").then((m) => ({ default: m.Footer })),
+);
 
 const Index = () => {
   return (
@@ -18,13 +43,18 @@ const Index = () => {
         <Hero />
         <About />
         <Profiles />
-        <Experience />
-        <Skills />
-        <Projects />
-        <Leadership />
-        <Education />
-        <Contact />
+        <Suspense fallback={null}>
+          <Experience />
+          <Skills />
+          <Projects />
+          <Leadership />
+          <Education />
+          <Contact />
+        </Suspense>
       </main>
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
     </div>
   );
 };
