@@ -7,9 +7,10 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 const projects = [
   {
     title: "Throughline",
-    subtitle: "Personal Journey Tracking Platform",
+    subtitle: "AI-Native Content Engine",
     technologies: [
       "React",
+      "TypeScript",
       "Node.js",
       "Express.js",
       "Prisma",
@@ -18,11 +19,11 @@ const projects = [
       "LLMs",
     ],
     description: [
-      "Developed a full-stack web application enabling users to log daily activities and track personal growth",
-      "Implemented automated summary generation for daily, weekly, and monthly progress analysis",
-      "Built RESTful APIs for CRUD operations and integrated MySQL for efficient data management",
-      "Created responsive React frontend with seamless UX for activity logging and insights visualization",
-      "Enabled shareable growth insights feature for community engagement",
+      "Built an AI-native content engine that synthesizes longitudinal user check-ins into platform-adapted posts in the user's own voice",
+      "Engineered tone extraction pipeline using LLMs to learn and persist each user's writing style across generations",
+      "Implemented multi-provider LLM fallback across Groq, OpenRouter, Gemini, OpenAI, and Anthropic with priority-based routing",
+      "Designed dual self-hosted/SaaS deployment architecture with scheduled AI generation via cron and full token usage tracking",
+      "Built complete auth surface including JWT + refresh tokens, email verification, Google OAuth, and password reset",
     ],
     github: "https://github.com/OmDongaonkar03/Throughline",
     live: "",
@@ -30,13 +31,13 @@ const projects = [
   {
     title: "Micrologs",
     subtitle: "Self-Hosted Analytics & Error Tracking Engine",
-    technologies: ["PHP", "MySQL", "Vanilla JS", "REST API"],
+    technologies: ["PHP", "MySQL", "Vanilla JS", "REST API", "Node.js", "Python", "Laravel"],
     description: [
-      "Built a self-hostable analytics and error tracking engine that ensures full data ownership with no third-party dashboard",
-      "Optimized the architecture to handle up to ~10,000 pageviews per day on standard shared hosting without external dependencies",
-      "Implemented comprehensive tracking for unique visitors, sessions, referrers, device types, and UTM campaigns",
-      "Developed robust error monitoring with automatic JS error catching and fingerprint-based grouping for backend issues",
-      "Integrated advanced features including audit logging, bot filtering, multi-project support, and a tracked link shortener",
+      "Built and shipped a self-hostable analytics and error tracking engine handling ~10,000 pageviews/day on standard shared hosting",
+      "Published SDKs for Node.js, Python, and Laravel across npm, PyPI, and Packagist with full REST API coverage",
+      "Implemented fingerprint-based error grouping, automatic JS error catching, bot filtering, and audit logging",
+      "Designed multi-project support, UTM campaign tracking, and a tracked link shortener with referrer and device analytics",
+      "Reduced onboarding friction with a browser-based setup wizard eliminating manual config for self-hosted deployments",
     ],
     github: "https://github.com/OmDongaonkar03/Micrologs",
     live: "",
