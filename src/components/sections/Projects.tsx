@@ -6,6 +6,20 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 const projects = [
   {
+    title: "Micrologs",
+    subtitle: "Self-Hosted Analytics & Error Tracking Engine",
+    technologies: ["PHP", "MySQL", "Vanilla JS", "REST API", "Node.js", "Python", "Laravel"],
+    description: [
+      "Built and shipped a self-hostable analytics and error tracking engine — handles ~10,000 pageviews/day on shared hosting and ~2.5M/day on VPS or dedicated infrastructure",
+      "Published SDKs for Node.js, Python, and Laravel across npm, PyPI, and Packagist with full REST API coverage",
+      "Implemented fingerprint-based error grouping, automatic JS error catching, bot filtering, and audit logging",
+      "Designed multi-project support, UTM campaign tracking, and a tracked link shortener with referrer and device analytics",
+      "Reduced onboarding friction with a browser-based setup wizard eliminating manual config for self-hosted deployments",
+    ],
+    github: "https://github.com/OmDongaonkar03/Micrologs",
+    live: "",
+  },
+  {
     title: "Throughline",
     subtitle: "AI-Native Content Engine",
     technologies: [
@@ -29,18 +43,26 @@ const projects = [
     live: "",
   },
   {
-    title: "Micrologs",
-    subtitle: "Self-Hosted Analytics & Error Tracking Engine",
-    technologies: ["PHP", "MySQL", "Vanilla JS", "REST API", "Node.js", "Python", "Laravel"],
-    description: [
-      "Built and shipped a self-hostable analytics and error tracking engine handling ~10,000 pageviews/day on standard shared hosting",
-      "Published SDKs for Node.js, Python, and Laravel across npm, PyPI, and Packagist with full REST API coverage",
-      "Implemented fingerprint-based error grouping, automatic JS error catching, bot filtering, and audit logging",
-      "Designed multi-project support, UTM campaign tracking, and a tracked link shortener with referrer and device analytics",
-      "Reduced onboarding friction with a browser-based setup wizard eliminating manual config for self-hosted deployments",
+    title: "Openlet",
+    subtitle: "Anonymous Feedback Pages",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "Cloudflare Workers",
+      "Hono.js",
+      "Cloudflare D1",
+      "SQLite",
     ],
-    github: "https://github.com/OmDongaonkar03/Micrologs",
-    live: "",
+    description: [
+      "Openlet lets anyone create a personal feedback page in 30 seconds. Share the link with your audience. They leave a star rating and an optional message. You read the responses. They stay completely anonymous.",
+      "Engineered a three-layer spam prevention system - Cloudflare Turnstile bot verification, IP deduplication, and browser fingerprinting via FingerprintJS",
+      "Added Cloudflare Workers Rate Limiting API on auth and submission endpoints, enforced at the edge with zero added latency",
+      "Deployed entirely on Cloudflare's edge network - Workers, D1, and Pages - with Wrangler-managed migrations and no origin server",
+      "Designed around zero friction for respondents - no account, no app, just a link; anyone can leave feedback in under 30 seconds",
+    ],
+    github: "https://github.com/OmDongaonkar03/Openlet",
+    live: "https://openlet.pages.dev",
   },
 ];
 
