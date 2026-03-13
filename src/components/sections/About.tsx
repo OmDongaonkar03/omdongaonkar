@@ -73,22 +73,19 @@ export function About() {
           <div className="grid md:grid-cols-3 gap-12">
             <div className="md:col-span-2 space-y-6">
               <p className="text-lg md:text-xl font-light leading-relaxed text-foreground">
-                Results-driven Full Stack Developer with hands-on experience in
-                building secure, high-performance web applications across the
-                entire technology stack.
+                I build tools that solve real problems and hold up under real
+                load. My projects aren't demos - Micrologs handles 2.5M
+                pageviews/day on a single node, Openlet shipped in a weekend
+                and is live with real users.
               </p>
               <p className="text-base text-muted-foreground font-light leading-relaxed">
-                Proven track record of optimizing application performance by
-                25-30% through API refactoring, database optimization, and code
-                minification. Skilled in modern JavaScript frameworks, RESTful
-                API development, and implementing enterprise-grade security
-                measures.
+                I work backend-first but own the full stack. I care about
+                performance, security, and making things that don't break in
+                production.
               </p>
               <p className="text-base text-muted-foreground font-light leading-relaxed">
-                Experienced in Agile methodologies and passionate about
-                delivering scalable, maintainable solutions. Currently pursuing
-                a Diploma in Artificial Intelligence and Machine Learning at
-                Marathwada Institute of Technology.
+                Currently looking for a team where engineering is taken
+                seriously.
               </p>
             </div>
 
