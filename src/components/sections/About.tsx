@@ -79,13 +79,13 @@ export function About() {
                 and is live with real users.
               </p>
               <p className="text-base text-muted-foreground font-light leading-relaxed">
-                I work backend-first but own the full stack. I care about
-                performance, security, and making things that don't break in
-                production.
+                Backend-first, but I own the full stack end to end. I think
+                about performance before it becomes a problem, and security
+                before someone finds the gap.
               </p>
               <p className="text-base text-muted-foreground font-light leading-relaxed">
-                Currently looking for a team where engineering is taken
-                seriously.
+                Open to the right opportunity — preferably one where the
+                engineering bar is high and the problems are worth solving.
               </p>
             </div>
 

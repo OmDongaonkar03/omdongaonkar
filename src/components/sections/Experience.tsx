@@ -24,10 +24,10 @@ const experiences = [
     location: "Chhatrapati Sambhajinagar, Maharashtra",
     period: "May 2025 - November 2025",
     highlights: [
-      "Developed full-stack web applications following industry-standard coding practices and design patterns",
-      "Collaborated with development teams to implement responsive frontend interfaces and robust backend services",
-      "Debugged and resolved technical issues across multiple projects, enhancing application stability",
-      "Participated in Agile sprint planning, daily standups, and retrospectives to streamline development workflows",
+      "Built and shipped full-stack LAMP applications in a production environment from day one",
+      "Debugged and resolved issues across multiple live projects with real user impact",
+      "Mentored 25–30 students through hands-on web development training while still an intern on the team",
+      "Participated in Agile sprint cycles — planning, standups, and retrospectives on real delivery timelines",
     ],
   },
 ];

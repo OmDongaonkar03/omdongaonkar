@@ -49,7 +49,7 @@ export function Hero() {
             variants={itemVariants}
             className="text-xl md:text-2xl text-muted-foreground font-light mb-8"
           >
-            Full Stack Developer
+            Full Stack Developer · DevTools & AI Products
           </motion.p>
 
           <motion.p

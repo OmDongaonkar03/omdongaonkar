@@ -55,7 +55,7 @@ const projects = [
       "SQLite",
     ],
     description: [
-      "Openlet lets anyone create a personal feedback page in 30 seconds. Share the link with your audience. They leave a star rating and an optional message. You read the responses. They stay completely anonymous.",
+      "Built and shipped Openlet in a weekend — a zero-friction anonymous feedback tool deployed entirely on Cloudflare's edge with no origin server",
       "Engineered a three-layer spam prevention system - Cloudflare Turnstile bot verification, IP deduplication, and browser fingerprinting via FingerprintJS",
       "Added Cloudflare Workers Rate Limiting API on auth and submission endpoints, enforced at the edge with zero added latency",
       "Deployed entirely on Cloudflare's edge network - Workers, D1, and Pages - with Wrangler-managed migrations and no origin server",

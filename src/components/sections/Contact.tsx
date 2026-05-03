@@ -24,11 +24,11 @@ const contactLinks = [
     icon: Linkedin,
   },
   {
-	label: "X",
-	value:"OmDongaonkar03",
-	href:"https://x.com/OmDongaonkar03",
-	icon: Twitter,
-	
+    label: "X",
+    value: "OmDongaonkar03",
+    href: "https://x.com/OmDongaonkar03",
+    icon: Twitter,
+
   }
 ];
 
@@ -52,8 +52,8 @@ export function Contact() {
               Let's work together
             </h2>
             <p className="text-muted-foreground font-light mb-10 leading-relaxed">
-              I'm always interested in hearing about new opportunities and challenging projects.
-              Feel free to reach out through any of the channels below.
+              If you're building something worth building, I'd like to hear about it.
+              Reach out through any of the channels below.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-4 mb-10">
