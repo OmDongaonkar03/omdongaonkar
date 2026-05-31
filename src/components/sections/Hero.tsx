@@ -42,7 +42,7 @@ export function Hero() {
             variants={itemVariants}
             className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight mb-6 leading-[1.1]"
           >
-            Om Amit Dongaonkar
+            Om Dongaonkar
           </motion.h1>
 
           <motion.p
