@@ -27,7 +27,7 @@ const experiences = [
       "Built and shipped full-stack LAMP applications in a production environment from day one",
       "Debugged and resolved issues across multiple live projects with real user impact",
       "Mentored 25–30 students through hands-on web development training while still an intern on the team",
-      "Participated in Agile sprint cycles — planning, standups, and retrospectives on real delivery timelines",
+      "Participated in Agile sprint cycles - planning, standups, and retrospectives on real delivery timelines",
     ],
   },
 ];

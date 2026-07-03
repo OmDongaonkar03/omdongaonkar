@@ -32,7 +32,7 @@ export function Education() {
                 </p>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Calendar className="h-3.5 w-3.5" />
-                  <span className="font-light">Expected Graduation: April 2026</span>
+                  <span className="font-light">Augest 2023 - June 2026</span>
                 </div>
               </div>
             </div>

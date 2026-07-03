@@ -10,7 +10,7 @@ const projects = [
     subtitle: "Self-Hosted Analytics & Error Tracking Engine",
     technologies: ["PHP", "MySQL", "Vanilla JS", "REST API", "Node.js", "Python", "Laravel"],
     description: [
-      "Built and shipped a self-hostable analytics and error tracking engine — handles ~10,000 pageviews/day on shared hosting and ~2.5M/day on VPS or dedicated infrastructure",
+      "Built and shipped a self-hostable analytics and error tracking engine - handles ~10,000 pageviews/day on shared hosting and ~2.5M/day on VPS or dedicated infrastructure",
       "Published SDKs for Node.js, Python, and Laravel across npm, PyPI, and Packagist with full REST API coverage",
       "Implemented fingerprint-based error grouping, automatic JS error catching, bot filtering, and audit logging",
       "Designed multi-project support, UTM campaign tracking, and a tracked link shortener with referrer and device analytics",
@@ -55,7 +55,7 @@ const projects = [
       "SQLite",
     ],
     description: [
-      "Built and shipped Openlet in a weekend — a zero-friction anonymous feedback tool deployed entirely on Cloudflare's edge with no origin server",
+      "Built and shipped Openlet in a weekend - a zero-friction anonymous feedback tool deployed entirely on Cloudflare's edge with no origin server",
       "Engineered a three-layer spam prevention system - Cloudflare Turnstile bot verification, IP deduplication, and browser fingerprinting via FingerprintJS",
       "Added Cloudflare Workers Rate Limiting API on auth and submission endpoints, enforced at the edge with zero added latency",
       "Deployed entirely on Cloudflare's edge network - Workers, D1, and Pages - with Wrangler-managed migrations and no origin server",

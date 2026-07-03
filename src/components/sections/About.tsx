@@ -84,7 +84,7 @@ export function About() {
                 before someone finds the gap.
               </p>
               <p className="text-base text-muted-foreground font-light leading-relaxed">
-                Open to the right opportunity — preferably one where the
+                Open to the right opportunity - preferably one where the
                 engineering bar is high and the problems are worth solving.
               </p>
             </div>
