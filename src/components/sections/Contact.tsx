@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/button";
 const contactLinks = [
   {
     label: "Email",
-    value: "dongaonkarom2006@gmail.com",
-    href: "mailto:dongaonkarom2006@gmail.com",
+    value: "om@omdongonkar.in",
+    href: "mailto:om@omdongonkar.in",
     icon: Mail,
   },
   {
@@ -79,7 +79,7 @@ export function Contact() {
             </div>
 
             <Button asChild variant="outline" className="font-light">
-              <a href="mailto:dongaonkarom2006@gmail.com">
+              <a href="mailto:om@omdongonkar.in">
                 <Mail className="h-4 w-4 mr-2" />
                 Send me an email
               </a>

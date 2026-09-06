@@ -6,9 +6,33 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 const projects = [
   {
+    title: "TypeClash",
+    subtitle: "Competitive Typing Platform",
+    company: "Built at Versatile Technology",
+    technologies: ["PHP", "React.js", "MySQL", "Cloudflare Workers"],
+    description: [
+      "Architected AES-256-GCM encrypted heartbeat telemetry and a statistical bot detector - timing variance, burst-share, floor-violation checks - for server-authoritative ranked matches",
+      "Built real-time multiplayer rooms on a 45+ table MySQL schema spanning seasons, ranks, coins, and cosmetics, with cleanup automated via Cloudflare Cron Workers",
+      "Moved hot-path WPM/timer state to Preact signals, bypassing React reconciliation entirely",
+      "Built a coin economy, cosmetics store, 100-level Learnings curriculum, and admin panel with a game-config editor and audit logging",
+      "Shipped custom JWT auth with refresh/revocation, Google OAuth, competitor comparison pages, AdSense, and full SEO prerendering",
+    ],
+    github: "",
+    live: "https://typeclash.in",
+  },
+  {
     title: "Micrologs",
     subtitle: "Self-Hosted Analytics & Error Tracking Engine",
-    technologies: ["PHP", "MySQL", "Vanilla JS", "REST API", "Node.js", "Python", "Laravel"],
+    company: "",
+    technologies: [
+      "PHP",
+      "MySQL",
+      "Vanilla JS",
+      "REST API",
+      "Node.js",
+      "Python",
+      "Laravel",
+    ],
     description: [
       "Built and shipped a self-hostable analytics and error tracking engine - handles ~10,000 pageviews/day on shared hosting and ~2.5M/day on VPS or dedicated infrastructure",
       "Published SDKs for Node.js, Python, and Laravel across npm, PyPI, and Packagist with full REST API coverage",
@@ -22,6 +46,7 @@ const projects = [
   {
     title: "Throughline",
     subtitle: "AI-Native Content Engine",
+    company: "",
     technologies: [
       "React",
       "TypeScript",
@@ -45,6 +70,7 @@ const projects = [
   {
     title: "Openlet",
     subtitle: "Anonymous Feedback Pages",
+    company: "",
     technologies: [
       "React",
       "TypeScript",
@@ -99,6 +125,11 @@ export function Projects() {
                         <p className="text-sm text-muted-foreground font-light">
                           {project.subtitle}
                         </p>
+                        {project.company && (
+                          <p className="text-xs text-muted-foreground/60 font-light mt-0.5">
+                            {project.company}
+                          </p>
+                        )}
                       </div>
                       <div className="flex gap-2">
                         {project.live && (

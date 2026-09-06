@@ -31,10 +31,13 @@ export function Hero() {
           animate="visible"
           className="max-w-3xl"
         >
-          <motion.div variants={itemVariants} className="flex items-center gap-2 mb-6">
+          <motion.div
+            variants={itemVariants}
+            className="flex items-center gap-2 mb-6"
+          >
             <MapPin className="h-3.5 w-3.5 text-muted-foreground" />
             <span className="text-sm text-muted-foreground font-light">
-              Pune, India
+              Chhatrapati Sambhajinagar, India
             </span>
           </motion.div>
 
@@ -49,14 +52,15 @@ export function Hero() {
             variants={itemVariants}
             className="text-xl md:text-2xl text-muted-foreground font-light mb-8"
           >
-            Full Stack Developer · DevTools & AI Products
+            Software Developer · DevTools & AI Products
           </motion.p>
 
           <motion.p
             variants={itemVariants}
             className="text-base md:text-lg text-muted-foreground font-light leading-relaxed max-w-2xl mb-12"
           >
-            I design software that compounds over time. Backend-first, AI-curious, system-obsessed.
+            I design software that compounds over time. Backend-first,
+            AI-curious, system-obsessed.
           </motion.p>
 
           <motion.div variants={itemVariants}>
