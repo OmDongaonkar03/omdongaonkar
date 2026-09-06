@@ -3,6 +3,20 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { GraduationCap, Calendar } from "lucide-react";
 
+const educationHistory = [
+  {
+    degree: "Bachelor of Technology, Information Technology",
+    institution: "MGMU Institute of Information & Communication Technology",
+    duration: "August 2026 - June 2029",
+  },
+  {
+    degree: "Diploma in Artificial Intelligence and Machine Learning",
+    institution:
+      "Marathwada Institute of Technology, Chhatrapati Sambhajinagar, India",
+    duration: "August 2023 - June 2026",
+  },
+];
+
 export function Education() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -18,24 +32,24 @@ export function Education() {
         >
           <p className="section-title">Education</p>
 
-          <div className="max-w-2xl">
-            <div className="flex items-start gap-4">
-              <div className="p-2 rounded-lg bg-card border border-border">
-                <GraduationCap className="h-5 w-5 text-muted-foreground" />
-              </div>
-              <div>
-                <h3 className="text-lg font-normal mb-1">
-                  Diploma in Artificial Intelligence and Machine Learning
-                </h3>
-                <p className="text-sm text-muted-foreground font-light mb-2">
-                  Marathwada Institute of Technology, Chhatrapati Sambhajinagar, India
-                </p>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Calendar className="h-3.5 w-3.5" />
-                  <span className="font-light">Augest 2023 - June 2026</span>
+          <div className="max-w-2xl space-y-8">
+            {educationHistory.map((edu) => (
+              <div key={edu.degree} className="flex items-start gap-4">
+                <div className="p-2 rounded-lg bg-card border border-border">
+                  <GraduationCap className="h-5 w-5 text-muted-foreground" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-normal mb-1">{edu.degree}</h3>
+                  <p className="text-sm text-muted-foreground font-light mb-2">
+                    {edu.institution}
+                  </p>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <Calendar className="h-3.5 w-3.5" />
+                    <span className="font-light">{edu.duration}</span>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </motion.div>
       </div>

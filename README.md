@@ -1,4 +1,4 @@
-# 🌐 Om Dongaonkar — Portfolio
+# 🌐 Om Dongaonkar - Portfolio
 
 This repository contains the source code for my personal portfolio website.
 
@@ -10,7 +10,7 @@ It showcases:
 
 The site is built with **Vite + React** and deployed globally using **Cloudflare Pages** for fast load times and great performance.
 
-🔗 Live: [https://omdongaonkar.in/](https://omdongaonkar.in/)
+🔗 Live: [https://omdongaonkar.in](https://omdongaonkar.in)
 
 ---
 
