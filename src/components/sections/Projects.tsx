@@ -15,7 +15,7 @@ const projects = [
       "Built real-time multiplayer rooms on a 45+ table MySQL schema spanning seasons, ranks, coins, and cosmetics, with cleanup automated via Cloudflare Cron Workers",
       "Moved hot-path WPM/timer state to Preact signals, bypassing React reconciliation entirely",
       "Built a coin economy, cosmetics store, 100-level Learnings curriculum, and admin panel with a game-config editor and audit logging",
-      "Shipped custom JWT auth with refresh/revocation, Google OAuth, competitor comparison pages, AdSense, and full SEO prerendering",
+      "Shipped custom JWT auth with refresh/revocation, Google OAuth, AdSense, and full SEO prerendering",
     ],
     github: "",
     live: "https://typeclash.in",
